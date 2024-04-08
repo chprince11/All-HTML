@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image - Tag</title>
+    <style>
+        img {
+            box-shadow: rgba(34, 34, 169, 1) 0px 0px 29px 5px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Image tag: The <img> tag is used to embed(ADD) an image in an HTML page. 
+        <img src="./myPic.png" alt="My Picture">
+        - src: Specifies the path to the image.
+        - alt: Specifies an alternate text for the image,  
+               if th eimage for some reson cannot be displayed.
+        - ./myPic.png: It is relative path
     
+    
+    -->
+    <h1>HTML &lt;img&gt; tag:</h1>
+
+    <img src="./images/pic.png" alt="motivation picture" width="400px" height="300px" title="Motivation Image" loading="lazy" > <br><br>
+
+    <!-- How to craete an image link using the <img> tag?
+    -->
+    <a href="https://www.youtube.com" target="_blank"><img src="./images/pic.png" width="450" height="400"></a>
+
+
+    <!-- **Map Elements: Another way to display an image** -->
+    <img src="./images/pic.png" alt="motivation picture"
+    usemap="#map" width="250" height="150"
+    />
+    <!-- *** usemap name and name in map both name should be the same *** -->
+    <map name="map">
+        <area
+        shape="rect" coords="0,0,125,150" href="https://youtube.com" alt=" youtube link"
+         />
+    </map>
+
+    <!-- **Bonus Tips!**
+
+    - Void elements / Empty Elements
+    - Not all part of a web page use the usual pattern of having an opening tag, some content, and then a closing tag. Some parts only need a single tag to work. These are called "Void Elements" or "Empty Elements".
+    Example: img, area, br, col, hr, link, meta, input, source, wbr ( word break )
+
+    -->
+
 </body>
+
 </html>
