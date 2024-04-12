@@ -37,7 +37,7 @@
 
         <div>
             <label for="password">Password</label>
-            <input type="password" id="password">
+            <input type="password" id="password" placeholder="Enter your password...">
         </div> <br>
 
         <div>
@@ -47,12 +47,112 @@
 
         <div>
             <label for="gender">Gender</label>
-            <input type="radio" value="male"> male
-            <input type="radio" value="female"> female
-        </div>
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> female
+        </div> <br>
 
+        <div>
+            <label for="hobbies">Fav Hobbies:</label>
+            <input type="checkbox" name="interest" value="music"> Music
+            <input type="checkbox" name="interest" value="sports"> Sports
+            
+        </div> <br>
 
+        <div>
+            <label for="country">Fav Country:</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="india">india</option>
+                <option value="uk">UK</option>
+                <option value="japan">Japan</option>
+            </select>
+          
+        </div> <br>
 
+        <div>
+            <label for="country">Select a Country:</label>
+            <input type="text" id="country" name="country" list="countries">
+            <datalist id="countries">
+                <option value="usa">USA</option>
+                <option value="india">india</option>
+                <option value="uk">UK</option>
+                <option value="japan">Japan</option>
+            </datalist>
+          
+        </div> <br>
+
+        <div>
+            <label for="file">Select File</label>
+            <input type="file" name="file">
+        </div> <br>
+
+        <button type="submit">
+            Submit
+        </button> <br> <hr> 
+
+        <!-- All usefull attributes -->
+        <div>
+            <input 
+            type="email"
+            placeholder="enter your mail"
+            name="email"
+            required
+            id="email"
+            autocomplete="off"
+            size="30"
+            value="abc@gmail.com"
+            readonly
+            disabled
+            pattern="[a-z0-9._%+-]+@[a-z0-9-]+\.[a-z]{2,}$"
+            >
+        </div> <br> <br>
+
+        <!-- Advanced HTML forms -->
+
+        <h2>Advanced HTML input</h2>
+
+        <div>
+            <label for="range">Range</label>
+            <input type="range" name="volume" min="0" max="100" value="80">
+        </div> <br>
+
+        <div>
+            <label for="birthday">birthdate:</label>
+            <input type="date" name="birthdate">
+        </div> <br>
+
+        <div>
+            <label for="appointmentTime">Appointment Time</label>
+            <input type="time" name="appointmentTime">
+        </div> <br>
+
+        <div>
+            <label for="favColor">Fav Color</label>
+            <input type="color" name="favColor">
+        </div> <br>
+
+        <div>
+            <label for="website">Website:</label>
+            <input type="url" name="website" placeholder="Enter website URL">
+        </div> <br>
+
+        <div>
+            <label for="expireDate">Month & Year:</label>
+            <input type="month" name="expireDate">
+        </div> <br>
+
+        <div>
+            <label for="week">Vaction Week:</label>
+            <input type="week" name="week">
+        </div> <br>
+
+        <!--
+        HTML Bonus Tips:
+
+        <div> stands for division. It is a block element, create a new line before and after itself br default.
+
+        <span> is inline-level element, do not create a new line 
+        -->
 
     </form>
 
