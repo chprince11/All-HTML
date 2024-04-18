@@ -5,12 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Chauhan website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            font-size: 1.1rem;
+        }
+        figure img{
+            border-radius: 50%;
+        }
+        strong{
+            position: relative;
+        }
+        progress{
+            width: 50%;
+            margin-left: 1.2rem;
+            margin-top: 0.35%;
+            position: absolute;
+            left: 2.5rem;
+        }
+    </style>
 </head>
 
 <header>
     <div class="logo">
         <a href="#" tabindex="_blank">
-            <img src="./images/logo.png" alt="motivation image" width="150px" height="120px">
+            <img src="./images/logo.png" alt="motivation image" width="100px" height="70px">
         </a>
     </div>
 
@@ -19,7 +43,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">#contact</a></li>
+            <li><a href="#">#Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -27,7 +51,9 @@
 <main>
     <div class="hero-content">
         <h1>I'am Prince Chauhan full stack developer</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus corporis voluptatibus est dolor, ad vel distinctio commodi consectetur? Pariatur adipisci quasi culpa eos iusto, vitae alias accusantium itaque repudiandae tempora odit, modi dignissimos quis dolorum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus corporis voluptatibus est dolor, ad
+            vel distinctio commodi consectetur? Pariatur adipisci quasi culpa eos iusto, vitae alias accusantium itaque
+            repudiandae tempora odit, modi dignissimos quis dolorum?</p>
         <button>See my works</button>
         <a href="https://www.youtube.com" target="_blank">
             <button>Visit youtube</button>
@@ -40,6 +66,34 @@
         </figure>
     </div>
 </main>
+
+<section class="about-section">
+    <h2>About Prince Chauhan👍</h2>
+    <div class="about-content">
+        <p>It's a great to meet you! I'm Prince chauhan. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur perferendis maxime repellendus at eos
+            architecto, illo laudantium in ipsa et atque nam, exercitationem mollitia porro eius beatae harum! Dicta
+            pariatur saepe a. Dicta nihil inventore, libero, aspernatur saepe est asperiores quos a quisquam dolor
+            omnis.</p>
+        <p><strong>My coding Knowledge</strong></p>
+        <div class="about-progess">
+            <label for="html">HTML</label>
+            <progress id="html" max="100" value="100">HTML 100%</progress>
+        </div>
+        <div class="about-progess">
+            <label for="css">CSS</label>
+            <progress id="css" max="100" value="100">CSS 100%</progress>
+        </div>
+        <div class="about-progess">
+            <label for="js">JS</label>
+            <progress id="js" max="100" value="90">JS 100%</progress>
+        </div>
+        <div class="about-progess">
+            <label for="git">Git</label>
+            <progress id="git" max="100" value="100">JS 100%</progress>
+        </div>
+    </div>
+</section>
 
 <body>
 
